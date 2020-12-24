@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24543" started-at="2020-12-24T02:26:05Z" finished-at="2020-12-24T02:26:30Z">
+  <suite name="DocContainerSuite" duration-ms="34619" started-at="2020-12-24T03:14:05Z" finished-at="2020-12-24T03:14:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24543" started-at="2020-12-24T02:26:05Z" finished-at="2020-12-24T02:26:30Z">
+    <test name="DocContainerSuite" duration-ms="34619" started-at="2020-12-24T03:14:05Z" finished-at="2020-12-24T03:14:40Z">
       <class name="com.ora.DockerHub">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ora.DockerHub@617faa95]" name="setUp" is-config="true" duration-ms="16822" started-at="2020-12-24T02:26:05Z" finished-at="2020-12-24T02:26:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ora.DockerHub@617faa95]" name="setUp" is-config="true" duration-ms="26702" started-at="2020-12-24T03:14:05Z" finished-at="2020-12-24T03:14:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testContainersPage()[pri:0, instance:com.ora.DockerHub@617faa95]" name="testContainersPage" duration-ms="6487" started-at="2020-12-24T02:26:22Z" finished-at="2020-12-24T02:26:28Z">
+        <test-method status="PASS" signature="testContainersPage()[pri:0, instance:com.ora.DockerHub@617faa95]" name="testContainersPage" duration-ms="6471" started-at="2020-12-24T03:14:32Z" finished-at="2020-12-24T03:14:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContainersPage -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:com.ora.DockerHub@617faa95]" name="terminateBrowser" is-config="true" duration-ms="1220" started-at="2020-12-24T02:26:28Z" finished-at="2020-12-24T02:26:30Z">
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:com.ora.DockerHub@617faa95]" name="terminateBrowser" is-config="true" duration-ms="1421" started-at="2020-12-24T03:14:38Z" finished-at="2020-12-24T03:14:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
       </class> <!-- com.ora.DockerHub -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- DocContainerSuite -->
+  </suite> <!-- DocContainerSuite -->
 </testng-results>
