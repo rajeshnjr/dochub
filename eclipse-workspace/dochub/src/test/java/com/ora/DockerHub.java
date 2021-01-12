@@ -3,32 +3,28 @@ package com.ora;
 import org.testng.annotations.Test;
 
 import com.ora.ContainersPage;
+import com.ora.Base.UITest;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
-public class DockerHub {
-	private static org.apache.log4j.Logger log = Logger.getLogger(DockerHub.class.getName());
+public class DockerHub extends UITest{
+	private static Logger log = Logger.getLogger(DockerHub.class.getName());
 	String sURL = "https://hub.docker.com/search";
 	WebDriver driver;
 	ContainersPage containerspage;
-
+	@Parameters({ "browser" })
 	@BeforeClass
-	public void setUp() throws Exception {
-		System.setProperty("webdriver.gecko.driver",
-				System.getProperty("user.dir")+"\\src\\test\\resources\\geckodriver.exe");
-		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
-		driver = new FirefoxDriver();
-		driver.manage().window().maximize();
-		driver.get(sURL);
+	public void setUp(String browser) throws Exception {
+		driver = CreateDriver(browser,sURL);
 	}
 
 	@Test

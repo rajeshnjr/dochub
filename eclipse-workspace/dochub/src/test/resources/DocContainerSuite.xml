@@ -3,6 +3,7 @@
 
 <suite name="DocContainerSuite">
 	<test name="DocContainerSuite">
+	<parameter name="browser" value="firefox"/>
 	<classes>
 			<class name="com.ora.DockerHub" />
 		</classes>

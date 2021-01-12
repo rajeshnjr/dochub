@@ -1,1 +1,6 @@
-test-output/
+/test-output
+/target
+*.class
+*.log
+*.zip
+*.tar.gz
