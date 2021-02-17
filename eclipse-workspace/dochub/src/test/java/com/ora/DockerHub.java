@@ -15,6 +15,8 @@ import com.ora.Base.UITest;
 import com.ora.pages.ContainersPage;
 import com.ora.utilities.Utils;
 
+import io.qameta.allure.Description;
+
 public class DockerHub extends UITest{
 	private static Logger log = Logger.getLogger(DockerHub.class.getName());
 	List<String> expectedFilters = new ArrayList<String>();
@@ -29,8 +31,9 @@ public class DockerHub extends UITest{
 		containerspage = new ContainersPage(driver);
 	}
 
-	@Test(priority = 0, description="user lands in the “Containers” tab")
-	public void testContainersPage() throws InterruptedException {
+	@Test(priority = 0)
+	@Description("User lands in the “Containers” tab")
+	public void testContainersLandingPage() throws InterruptedException {
 		
 		// Verify that the user lands in the “Containers” tab by default
 		log.info("Verify that the user lands in the “Containers” tab by default");
@@ -41,8 +44,9 @@ public class DockerHub extends UITest{
 		
 	}
 	
-	@Test(priority = 1, description="Checkboxes with labels “Verified Publisher” and “Official Images” are under Images")
-	public void twoCheckBoxes() {
+	@Test(priority = 1)
+	@Description("Checkboxes with labels “Verified Publisher” and “Official Images” are under Images")
+	public void testCheckBoxesLabel() {
 		log.info(
 				"Verify there are 2 checkboxes under Images with labels \"Verified Publisher\" and \"Official Images\"");
 	    availableFilters = containerspage.getCheckBoxLabelFor("Images");
@@ -52,8 +56,9 @@ public class DockerHub extends UITest{
 		
 	}
 	
-	@Test(priority = 2, description="Under Categories, checkboxes are present 1.Analytics 2.Base Images 3.Databases 4.Storage ")
-	public void fourCheckBoxesArePresent() {
+	@Test(priority = 2)
+	@Description("Under Categories, checkboxes are present 1.Analytics 2.Base Images 3.Databases 4.Storage")
+	public void testCategoriesCheckBoxes() {
 		log.info(
 				"Under Categories, verify the following checkboxes are present\n1.Analytics\n2.Base Images\n3.Databases\n"
 						+ "4.Storage");
@@ -63,7 +68,8 @@ public class DockerHub extends UITest{
 		Assert.assertTrue(availableFilters.equals(expectedFilters), "Expected Checkboxes are not available");
 		log.info("PASSED : Expected Checkboxes are available");
 	}
-	@Test(priority = 3, description="“Publisher Content” is shown at the top of the content")
+	@Test(priority = 3)
+	@Description("“Publisher Content” is shown at the top of the content")
 	public void testPublisherContent() {
 		// Verify the filter “Publisher Content” is shown at the top of the content
 				log.info("Click the \"Verified Publisher\" checkbox");
@@ -74,7 +80,8 @@ public class DockerHub extends UITest{
 				log.info("PASSED : Publisher Content is shown at the top of the content");
 	}
 	
-	@Test(priority = 4, description="“Additional filters are shown at the top of the content")
+	@Test(priority = 4)
+	@Description("“Additional filters are shown at the top of the content")
 	public void testAdditionalFilters() {
 		// Verify the additional filters are shown at the top of the content
 				log.info("Click Base Images and Database Checkboxes");
@@ -91,7 +98,8 @@ public class DockerHub extends UITest{
 				log.info("PASSED : Additional filters are shown at the top of the content");
 	}
 	
-	@Test(priority = 5, description="Checkbox in the left filter pane is also unchecked")
+	@Test(priority = 5)
+	@Description("Checkbox in the left filter pane is also unchecked")
 	public void testUnChecked() {
 		// Verify the corresponding checkbox in the left filter pane is also unchecked
 				log.info("Click the close icon (X) on the database filter");
