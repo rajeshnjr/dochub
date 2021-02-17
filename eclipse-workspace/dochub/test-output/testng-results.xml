@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="DocContainerSuite" duration-ms="34010" started-at="2021-01-12T07:18:21Z" finished-at="2021-01-12T07:18:55Z">
+  <suite name="DocContainerSuite" duration-ms="24238" started-at="2021-02-17T08:09:01Z" finished-at="2021-02-17T08:09:25Z">
     <groups>
     </groups>
-    <test name="DocContainerSuite" duration-ms="34010" started-at="2021-01-12T07:18:21Z" finished-at="2021-01-12T07:18:55Z">
+    <test name="DocContainerSuite" duration-ms="24238" started-at="2021-02-17T08:09:01Z" finished-at="2021-02-17T08:09:25Z">
       <class name="com.ora.DockerHub">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.ora.DockerHub@31dc339b]" name="setUp" is-config="true" duration-ms="18146" started-at="2021-01-12T07:18:21Z" finished-at="2021-01-12T07:18:39Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.ora.DockerHub@37eeec90]" name="setUp" is-config="true" duration-ms="7018" started-at="2021-02-17T08:09:01Z" finished-at="2021-02-17T08:09:08Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testContainersPage()[pri:0, instance:com.ora.DockerHub@31dc339b]" name="testContainersPage" duration-ms="14559" started-at="2021-01-12T07:18:39Z" finished-at="2021-01-12T07:18:54Z">
+        <test-method status="PASS" signature="testContainersPage()[pri:0, instance:com.ora.DockerHub@37eeec90]" name="testContainersPage" duration-ms="2316" started-at="2021-02-17T08:09:08Z" description="user lands in the “Containers” tab" finished-at="2021-02-17T08:09:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContainersPage -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:com.ora.DockerHub@31dc339b]" name="terminateBrowser" is-config="true" duration-ms="1290" started-at="2021-01-12T07:18:54Z" finished-at="2021-01-12T07:18:55Z">
+        <test-method status="PASS" signature="twoCheckBoxes()[pri:1, instance:com.ora.DockerHub@37eeec90]" name="twoCheckBoxes" duration-ms="103" started-at="2021-02-17T08:09:10Z" description="Checkboxes with labels “Verified Publisher” and “Official Images” are under Images" finished-at="2021-02-17T08:09:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- twoCheckBoxes -->
+        <test-method status="PASS" signature="fourCheckBoxesArePresent()[pri:2, instance:com.ora.DockerHub@37eeec90]" name="fourCheckBoxesArePresent" duration-ms="2" started-at="2021-02-17T08:09:10Z" description="Under Categories, checkboxes are present 1.Analytics 2.Base Images 3.Databases 4.Storage " finished-at="2021-02-17T08:09:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fourCheckBoxesArePresent -->
+        <test-method status="PASS" signature="testPublisherContent()[pri:3, instance:com.ora.DockerHub@37eeec90]" name="testPublisherContent" duration-ms="7357" started-at="2021-02-17T08:09:10Z" description="“Publisher Content” is shown at the top of the content" finished-at="2021-02-17T08:09:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPublisherContent -->
+        <test-method status="PASS" signature="testAdditionalFilters()[pri:4, instance:com.ora.DockerHub@37eeec90]" name="testAdditionalFilters" duration-ms="4722" started-at="2021-02-17T08:09:18Z" description="“Additional filters are shown at the top of the content" finished-at="2021-02-17T08:09:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdditionalFilters -->
+        <test-method status="PASS" signature="testUnChecked()[pri:5, instance:com.ora.DockerHub@37eeec90]" name="testUnChecked" duration-ms="494" started-at="2021-02-17T08:09:22Z" description="Checkbox in the left filter pane is also unchecked" finished-at="2021-02-17T08:09:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnChecked -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:com.ora.DockerHub@37eeec90]" name="terminateBrowser" is-config="true" duration-ms="2067" started-at="2021-02-17T08:09:23Z" finished-at="2021-02-17T08:09:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->

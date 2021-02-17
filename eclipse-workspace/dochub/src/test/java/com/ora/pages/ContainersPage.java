@@ -1,4 +1,4 @@
-package com.ora;
+package com.ora.pages;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ public class ContainersPage extends Page{
 	String currentFilterPath="//div[@data-testid='currentFilters']/div";
 	WebDriver driver;
 
-	 ContainersPage(WebDriver driver) {
+	 public ContainersPage(WebDriver driver) {
 		 super(driver);
 		 this.driver = driver;
 	}

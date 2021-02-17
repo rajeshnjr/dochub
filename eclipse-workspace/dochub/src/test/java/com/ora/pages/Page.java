@@ -1,4 +1,4 @@
-package com.ora;
+package com.ora.pages;
 
 import java.util.ArrayList;
 import java.util.List;
